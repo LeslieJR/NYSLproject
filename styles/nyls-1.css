@@ -1,0 +1,45 @@
+/*Reset*/
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+/*STRUCTURE*/
+header img{
+    display: inline;
+}
+
+
+main nav a:nth-child(2){
+    padding-right: 10rem;
+    padding-left: 10rem;
+}
+
+
+/*TYPOGRAPHY*/
+/*Shorthand Font Properties
+FONT: font-style, font-variant, font-weight, font-size/line-height, and font-family.*/
+html{
+    font-size: 16px;
+}
+
+main h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main nav{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, nav{
+    text-align: center;
+}
+
+/*STYLE*/
+
+
+a{
+    color: black;
+}
+a:hover{
+    color: blue;
+}

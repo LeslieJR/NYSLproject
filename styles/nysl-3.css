@@ -1,0 +1,111 @@
+/*RESET*/
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+/*STRUCTURE*/
+.big-container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h1{
+    position: absolute;
+    top: 0;
+    font-weight: 700;
+    font-size: 2.7rem;
+}
+header{
+    height: 300px;
+    margin: 110px 0 0 0;
+    text-align: center;
+
+    background-image: url("/images/design1_image1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -55px;
+   
+}
+
+header ~ h2{
+    width: 100%;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    margin:0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+[alt="logo"]{
+/*     margin: 30px 30px 0 0;
+    width: 150px;
+    vertical-align: top;
+    display: inline-block; */
+
+    display: inline-block;
+    width: 180px;
+    margin-top: 30px;
+    vertical-align: top;
+}
+
+
+h2 ~ p{
+    padding-left: 20px;
+}
+
+/*Navigation bar*/
+nav{
+    position: absolute;
+    top: 100px;
+    right: 300px;
+
+}
+
+nav a{
+    padding: 10px 10px;
+    border: 1px solid black;
+    box-shadow: 2px 1px black;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+nav a:nth-child(2){
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+a.active{
+    background-color: #4ec24e;
+    text-decoration: none;
+    color: black;
+}
+
+/*inside the main we have a div (class="info")*/
+.info{
+    display: inline-block;
+    width: 80%;
+    padding-left: 40px;
+}
+
+.hidden-content{
+    visibility: hidden;
+}
+
+/*TYPOGRAPHY*/
+h1,
+h2,
+h3,
+p,
+a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+h3{
+    font-weight: 400;
+}
+
+
+
