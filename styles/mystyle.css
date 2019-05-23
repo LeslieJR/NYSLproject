@@ -51,13 +51,14 @@ body{
     background-color: #edeff4;
 }
 .big-container{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
+
 header{
     width: 100%;
-    height: 500px;;
+    height: 554px;
     background-image: url(/images/the-ball-488700_1280.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -65,25 +66,22 @@ header{
 }
 
 nav{
-    display: inline-block;
-    width: 90%;
-    height: 5.4%;
-    padding-top: 5px;
+    font-size:0;/*set the font-size of the parent 0*/
+    width: 100%;
+    height: 44px;
     position: fixed;
     top: 0;
-    font-size: 0;/*set the font-size of the parent container 0*/
-    background-color: #282830;
-    z-index: 1;
+    background-color: #282830;  
 }
 
 nav a{
-    padding: 15px 5px 5px 10px;
-    font-size: 2.1rem; /*set the font-size of the child 1.5rem*/
+    font-size: 2.2rem;/*set the font-size of the child 2.1rem*/
     font-family: 'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
     color: white;
+    padding-right: 20px;
+    padding-left: 20px;
 }
-
 a:hover{
     background-color: #6f7070;
     -webkit-transition: background-color 0.5s ease-out;
@@ -99,11 +97,10 @@ a.active{
 
 /*Page's title*/
 header h1{
-    display: inline-block;
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 10%;
-    font-size: 90px;
+    padding-top: 10%;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 7rem;
     font-weight: 900;
     font-family: 'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
@@ -123,16 +120,13 @@ header h1{
 
 /*CONTENT*/
 .content{
-    width: 49.39%;
+    width: 50%;
     display: inline-block;
     padding-top: 20px;
 }
 
 /*properties aplied also to the about, contact, game info and rules pages*/
-.about .content,
-.contact .content,
-.info .content,
-.rules .content{
+.content{
     margin-left: 25%;
 }
 .about .content h2,
@@ -168,14 +162,15 @@ p,
 ul,
 ol,
 table,
-form{
+form,
+option{
     font-family: 'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 h2{
     display: block;
     font-weight: 700;
     font-size: 2.7rem;
-    border-bottom: 2px solid black;
+    
 }
 h3{
     font-weight: 600;
@@ -217,31 +212,41 @@ td{
 }
 
 .calendar tbody tr:nth-child(1),
+.calendar tbody tr:nth-child(11){
+    color: #ffffff;
+    background-color: #282830;
+}
+
 .calendar tbody tr:nth-child(2),
-.calendar tbody tr:nth-child(5),
+.calendar tbody tr:nth-child(3),
 .calendar tbody tr:nth-child(6),
-.calendar tbody tr:nth-child(9),
+.calendar tbody tr:nth-child(7),
+.calendar tbody tr:nth-child(10),
 .calendar tbody tr:nth-child(12),
 .calendar tbody tr:nth-child(13),
 .calendar tbody tr:nth-child(16),
 .calendar tbody tr:nth-child(17){
     background-color: rgba(52, 171, 120, 0.4);
 }
-
-.game-location{
+/*IFRAMES GOOGLE-MAPS*/
+.location-map div:first-child{
+    width: 40%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .location-map {
     display: flex;
-}
-.location-map>div{
     justify-content: space-around;
+    margin-bottom: 30px;
 }
-/* .game-location>div iframe{
-    flex-grow: 1;
-} */
+
+iframe{
+    width: 450px;
+    height: 300px;
+}
+
 
 .info p{
     padding-bottom: 5px;
@@ -306,7 +311,7 @@ li{
     display: block;
   } 
   
-  h3.title {
+h3.title {
     display: block;
     width: 100%;
     background-color: #6a7274;
@@ -316,25 +321,25 @@ li{
     text-align: center;
   }
 
-  .collapse:nth-child(even) h3.title{
+.collapse:nth-child(even) h3.title{
     border-top: 1px solid #282830;
     border-bottom: 1px solid #282830;
   }
 
-  .collapsed-content {
+.collapsed-content {
     display: none;
     padding-right: 20px;
     background-color:#ffffff;
     z-index: 1;
   }
-  .collapse:hover .collapsed-content {
+.collapse:hover .collapsed-content {
       display: inline-block;
       width: 100%;
       text-align: justify;
       margin: 0 auto;
     }
 
-  .collapse:hover h3.title {background-color: #35ad79;}
+.collapse:hover h3.title {background-color: #35ad79;}
 
 /*FOOTER*/
 footer{
@@ -407,12 +412,8 @@ textarea:focus,
 button:focus {
     outline: none;
 }
-/*to remove the border and default style*/
-select {
-    border: 0 !important;.  /*Removes border*/
-   -webkit-appearance: none;  /*Removes default chrome and safari style*/
-   -moz-appearance: none;  /*Removes default style Firefox*/
-}
+
+
 
 .form h1{
     font-family:'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -427,6 +428,9 @@ form.registration{
     flex-direction: column;
     margin: 0 auto;
     font-family:'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+}
+option{
     font-size: 1.2rem;
 }
 .permission p{
@@ -564,12 +568,39 @@ input[type="tel"]{
 .grade div{
     flex-grow: 1;
 }
-input[value=send]{
+input[value="Send"]{
     display: flex;
+    font-family:'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
     margin: 0 auto;
+    background-color: #35ad79;
+    border: 0 none;
+    border-radius: 20px;
 }
 select{
     margin-left: 10px;
+    width: 198px;
 }
+
+.bday-gender div:first-child,
+.bday-gender div:last-child p{
+    align-self: center;
+}
+.bday-gender div:last-child div:first-child{
+    margin-right: 30px;
+}
+[name=gender]{ 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
+}
+
+[name=gender]:checked + label {
+    outline: 2px solid #35ad79;
+  }
+
 
 
