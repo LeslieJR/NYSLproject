@@ -47,6 +47,7 @@ html{
 }
 /*end RESET*/
 
+
 body{
     background-color: #edeff4;
 }
@@ -55,7 +56,7 @@ body{
     margin: 0 auto;
 }
 
-
+/*INSIDE THE HEADER*/
 header{
     width: 100%;
     height: 554px;
@@ -110,29 +111,28 @@ header h1{
 }
 
 /* LEFT ASIDE */
-.left{
+/* .left{
     display: inline-block;
     vertical-align: top;
     padding-top: 20px;
     width: 30%;
-    /* border: 1px solid black; */
-}
+     border: 1px solid black; 
+} */
 
-/*CONTENT*/
+/*CONTENT INSIDE THE MAIN*/
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .content{
     width: 50%;
-    display: inline-block;
-    padding-top: 20px;
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    
 }
-
-/*properties aplied also to the about, contact, game info and rules pages*/
-.content{
-    margin-left: 25%;
-}
-.about .content h2,
-.contact .content h2,
-.info .content h2,
-.rules .content h2{
+.content h2{
     border: none;
     padding-bottom: 10px;
 }
@@ -149,13 +149,7 @@ header h1{
 }
 
 
-/**/
-
-.content span{
-    font-weight: 700;
-}
 .content h2,
-.right h2,
 form h2,
 h3,
 p,
@@ -186,9 +180,7 @@ h3{
     padding-left: 60px;
     font-size: 1.3rem;
 }
-.content{
-    margin-bottom: 3rem;
-}
+
 /*Game-Information Page*/
 table{
     margin-bottom: 1rem;
@@ -210,13 +202,11 @@ td{
 .location td{
     font-size: 1.4rem;
 }
-
 .calendar tbody tr:nth-child(1),
 .calendar tbody tr:nth-child(11){
     color: #ffffff;
     background-color: #282830;
 }
-
 .calendar tbody tr:nth-child(2),
 .calendar tbody tr:nth-child(3),
 .calendar tbody tr:nth-child(6),
@@ -228,7 +218,7 @@ td{
 .calendar tbody tr:nth-child(17){
     background-color: rgba(52, 171, 120, 0.4);
 }
-/*IFRAMES GOOGLE-MAPS*/
+/**iframes google maps**/
 .location-map div:first-child{
     width: 40%;
     display: flex;
@@ -241,20 +231,16 @@ td{
     justify-content: space-around;
     margin-bottom: 30px;
 }
-
 iframe{
     width: 450px;
     height: 300px;
 }
-
-
 .info p{
     padding-bottom: 5px;
     padding-top: 5px;
 
 }
-
-/*Rules & Policies Page*/
+/*RULES AND POLICIES*/
 ul{
     list-style: square;
 }
@@ -282,31 +268,7 @@ li{
     font-size: 1.3rem;
 }
 
-/*RIGHT ASIDE*/
-.right{
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 20px;
-    width: 20%;
-    height: 370px;
-    background-color: #35ad79;
-}
-.right h2{
-    border: none;/*h2 for the aside right without border bottom*/
-    font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-}
-.right img{
-    width: 100%;
-}
-
-.left p{
-    visibility: hidden;
-}
-/*RULES AND POLICIES*/
-  .collapse {
+.collapse {
     width: 100%;
     display: block;
   } 
@@ -331,13 +293,13 @@ h3.title {
     padding-right: 20px;
     background-color:#ffffff;
     z-index: 1;
-  }
+}
 .collapse:hover .collapsed-content {
       display: inline-block;
       width: 100%;
       text-align: justify;
       margin: 0 auto;
-    }
+}
 
 .collapse:hover h3.title {background-color: #35ad79;}
 
@@ -348,60 +310,55 @@ footer{
     background-position-y: 50%;
     background-repeat: no-repeat;
 }
-footer h2{
-    border:none;
-    
-}
+
 /*inside the footer goes the subscription form and the social media icons*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+footer div{
+    width:50%;
+}
 footer form{
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 20px;
+    display: flex;
 }
-
-form.registration{
-    width: 100%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 20px;
+footer form input,
+footer form h2{
+    margin: 30px 0 20px 0;
 }
-
+footer form h2{
+    margin-right: 10px;
+    margin-left: 13px;
+}
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
+.icons img{
+    width: 52px;
+    height: 52px;
+    margin: 8px;
+}
+.icons a{
+    align-self: center;
+}
+/* .icons a:hover{
+    QUITAR EL HOVER DE ESTOS LINKS!!
+} */
 footer input[type="email"]{
-    width: 300px;
-    height: 40px;
+    width: 295px;
     font-family: 'Barlow Semi Condensed',sans-serif;
 }
-
 footer input[type="email"]:focus,
 footer input[type="email"]:hover
 {
     border: 4px solid #4B493B;
 }
-
-footer input[type="submit"]{
-    width: 130px;
-    height: 40px;
-    font-family: 'Barlow Semi Condensed',sans-serif;
-}
-
 footer input[type="submit"]:hover{
     box-shadow: 0 0 5px #000;
-}
-
-/*ICONS*/
-.icons{
-    text-align: end;
-    display: inline-block;
-    margin-left: 24%;
-}
-.icons img{
-    padding-top: 40px;
-    width: 10%;
-}
-.icons img:nth-child(2){
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 /*REGISTRATION FORM*/
@@ -413,17 +370,14 @@ button:focus {
     outline: none;
 }
 
-
-
-.form h1{
+.registration h1{
     font-family:'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 3rem;
     text-align: center;
     margin-top:20px;
     margin-bottom: 20px;
 }
-form.registration{
-    width: 60%;
+.registration{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -437,7 +391,6 @@ option{
     font-family: 'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
     text-align: justify;
-
 } 
 .permission p:last-child{
     margin-top:10px;
@@ -454,7 +407,6 @@ option{
     width: 100%;
     margin-bottom: 30px;
 }
-
 .personal-info div,
 .city-postcode div,
 .contacto>div,
@@ -474,7 +426,6 @@ option{
     flex-grow: 1;
     border: none;;
 }
-
 input[type="text"],
 .contacto input[type="email"],
 input[type="tel"]{
@@ -490,15 +441,8 @@ input[type="tel"]{
     width: 50%;
     justify-content: flex-start;
 }
-
 .bday-gender>div:last-child{
     display: flex;
-
-}
-
-.bday-gender div:first-child label,
-.bday-gender div:last-child p{
-    margin-right: 10px;
 }
 .grade{
     display: flex;
@@ -507,7 +451,6 @@ input[type="tel"]{
 .grade p{
     margin-right: 20px;
 }
-
 .closest-school{
     display: flex;
     flex-direction: column;
@@ -559,16 +502,14 @@ input[type="tel"]{
     margin-top: 20px;
     margin-bottom: 30px;
 }
-
 .signature-date input{
     margin-left: 10px;
 }
-
 .signature-date div:first-child input,
 .grade div{
     flex-grow: 1;
 }
-input[value="Send"]{
+input[name="submit"]{
     display: flex;
     font-family:'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2rem;
@@ -582,7 +523,6 @@ select{
     margin-left: 10px;
     width: 198px;
 }
-
 .bday-gender div:first-child,
 .bday-gender div:last-child p{
     align-self: center;
@@ -595,9 +535,7 @@ select{
     opacity: 0;
     width: 0;
     height: 0;
-    
 }
-
 [name=gender]:checked + label {
     outline: 2px solid #35ad79;
   }
