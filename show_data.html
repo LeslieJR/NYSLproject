@@ -1,63 +1,116 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Feedback Sent</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--link the css file-->
+  <link href="/styles/mystyle.css" rel="stylesheet">
+  <!--link google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+  <!--link arrow icon-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!--link social media icons-->
+
+  <title>Feedback Sent</title>
 </head>
+
 <body>
-<p align=center>&nbsp;</p>
-<h1 align=center><font size="+1">The following information has been sent as your
-  feedback:</font></h1>
+  <div class="big-container feedback">
+    <header>
+      <nav>
+        <a href="index.html">Home</a><a href="about-new.html">About</a><a href="contact-new.html">Contact</a><a
+          href="game-info.html">Information</a><a href="rules.html">Rules</a><a
+          href="registration.html">Registration</a>
+      </nav>
+      <h1>Northside Youth Soccer League</h1>
+    </header>
 
-<table border="1" align=center width="226">
-  <tr>
-    <th align="center">Form Field</th>
-    <th align="center">Field Value</th>
-  </tr>
+    <main>
+      <div class="content">
+        <p align=center>&nbsp;</p>
+        <h1 align=center>
+          The following information has been sent as your
+          feedback:
+        </h1>
 
-<script language="javascript">
-var args = location.search.substr(1).split('&');
-for (var i = 0; i < args.length; ++i) {
-  var parts = args[i].split('=');
-  if (parts != null) {
-    var field = parts[0];
-    var value = parts[1];
-    if (value == null) {
-      value = "null"
-    }
-    else {
-      value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
-    }
+        <table border="1" align=center>
+          <tr>
+            <th align="center">Form Field</th>
+            <th align="center">Field Value</th>
+          </tr>
 
-    document.writeln('<tr><td align="center">' + field + '</td>');
-    document.writeln('<td align="center">' + value + '</td></tr>');
-  }
-}
-</script>
+          <script language="javascript">
+            var args = location.search.substr(1).split('&');
+            for (var i = 0; i < args.length; ++i) {
+              var parts = args[i].split('=');
+              if (parts != null) {
+                var field = parts[0];
+                var value = parts[1];
+                if (value == null) {
+                  value = "null"
+                }
+                else {
+                  value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                }
 
-<noscript>
-<tr><td>
-<p>You need to turn on Javascript in your browser.</p>
+                document.writeln('<tr><td align="center">' + field + '</td>');
+                document.writeln('<td align="center">' + value + '</td></tr>');
+              }
+            }
+          </script>
 
-<p>In Microsoft Internet Explorer 4 or greater:</p>
-<ul>
-<li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
-<li>Click on the "Security" tab.</li>
-<li>Click on the "Custom Level" button. (In IE 4, select "Custom"
-and then click on "Settings...".)</li>
-<li>Under "Active scripting" make sure "Enable" is selected.</li>
-</ul>
+          <noscript>
+            <tr>
+              <td>
+                <p>You need to turn on Javascript in your browser.</p>
 
-<p>In Netscape version 4 or greater:</p>
-<ul>
-<li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
-<li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
-<li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
-<li>Click the <b>OK</b> button.</li>
-</ul>
+                <p>In Microsoft Internet Explorer 4 or greater:</p>
+                <ul>
+                  <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+                  <li>Click on the "Security" tab.</li>
+                  <li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+                    and then click on "Settings...".)</li>
+                  <li>Under "Active scripting" make sure "Enable" is selected.</li>
+                </ul>
 
-</td></tr>
-</noscript>
+                <p>In Netscape version 4 or greater:</p>
+                <ul>
+                  <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+                  <li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+                  <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+                  <li>Click the <b>OK</b> button.</li>
+                </ul>
 
-</table>
+              </td>
+            </tr>
+          </noscript>
+
+        </table>
+
+      </div>
+
+    </main>
+    <footer>
+      <!--here the social media icons are going to be displayed-->
+      <div>
+        <form action="/action_page.php" target="_blank" method="POST">
+          <h2>Subscribe to our newsletter:</h2>
+
+          <input type="email" name="email" placeholder=" &#64; Your email" required>
+          <input type="submit" value="Send">
+
+        </form>
+      </div>
+      <div class="icons">
+        <a href="https://es-es.facebook.com/" target="_blank"><img src="/images/facebook.png" alt="fb-icon"></a>
+        <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="/images/instagram.png" alt="inta-icon"></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><img src="/images/twitter.png" alt="twitter-icon"></a>
+      </div>
+    </footer>
+  </div>
 </body>
-</html>
 
+</html>
