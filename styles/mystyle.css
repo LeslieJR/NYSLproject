@@ -1,148 +1,212 @@
 /*RESET*/
-*, 
-*:before, 
-*:after{
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, form, label, caption, tfoot,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+form,
+label,
+caption,
+tfoot,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-html{
-    font-size: 16px;
+html {
+  font-size: 16px;
 }
 /*end RESET*/
 
-
-body{
-    background-color: #edeff4;
+body {
+  background-color: #edeff4;
 }
-.big-container{
-    width: 100%;
-    margin: 0 auto;
+.big-container {
+  width: 100%;
+  margin: 0 auto;
 }
 
 /*INSIDE THE HEADER*/
-header{
-    width: 100%;
-    height: 554px;
-    background-image: url(/images/the-ball-488700_1280.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 50%;   
+header {
+  width: 100%;
+  height: 500px;
+  background-image: url(/images/611cf545d77403263ee6a60afaf377b3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 200px;
 }
 
-nav{
-    font-size:0;/*set the font-size of the parent 0*/
-    width: 100%;
-    height: 44px;
-    position: fixed;
-    top: 0;
-    background-color: #282830;  
+nav {
+  font-size: 0; /*set the font-size of the parent 0*/
+  width: 100%;
+  height: 44px;
+  position: fixed;
+  top: 0;
+  background-color: #282830;
+  z-index: 1;
 }
 
-nav a{
-    font-size: 2.2rem;/*set the font-size of the child 2.1rem*/
-    font-family: 'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
-    color: white;
-    padding-right: 20px;
-    padding-left: 20px;
+nav a {
+  font-size: 2.2rem; /*set the font-size of the child 2.1rem*/
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+  z-index: 1;
 }
-a:hover{
-    background-color: #6f7070;
-    -webkit-transition: background-color 0.5s ease-out;
-    -moz-transition: background-color 0.5s ease-out;
-    -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
+nav a:hover {
+  background-color: #6f7070;
+  transition: background-color 0.5s ease-out;
+  z-index: 1;
 }
 
-a.active{
-    color: #35ad79;
-    font-weight: 700;
+nav a.active {
+  color: #35ad79;
+  font-weight: 700;
+  z-index: 1;
 }
 
 /*Page's title*/
-header h1{
-    padding-top: 10%;
-    padding-left: 35px;
-    padding-right: 35px;
-    font-size: 7rem;
-    font-weight: 900;
-    font-family: 'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    text-shadow: 4px 4px #363535;
-}
+header h1 {
+  padding-top: 12%;
 
-/* LEFT ASIDE */
-/* .left{
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 20px;
-    width: 30%;
-     border: 1px solid black; 
-} */
+  font-size: 6rem;
+  font-weight: 900;
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(106, 194, 118);
+  text-shadow: 4px 4px #363535;
+}
 
 /*CONTENT INSIDE THE MAIN*/
-main{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+main {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.content{
-    width: 50%;
-    display:flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
-    
+
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
 }
 
 .about .content p,
 .info .content p,
-.rules .content p{
-    padding-left: 0;
+.rules .content p {
+  padding-left: 0;
 }
-.content h2{
-    padding-top: 40px;
-    padding-bottom: 20px;
+.content h2 {
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
-
 
 .content h2,
 form h2,
@@ -153,55 +217,55 @@ ol,
 table,
 form,
 option,
-.feedback .content h1{
-    font-family: 'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.feedback .content h1 {
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-h2{
-    display: block;
-    font-weight: 700;
-    font-size: 2.7rem;
-    
+h2 {
+  display: block;
+  font-weight: 700;
+  font-size: 2.7rem;
 }
-h3{
-    font-weight: 600;
-    font-size: 1.5rem;
-    padding-bottom: 15px;
-    padding-top: 15px;
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
-.home p{
-    padding-left: 25px; 
-    font-size: 1.3rem;
+.home p {
+  padding-left: 25px;
+  font-size: 1.3rem;
 }
-.contact p{
-    padding-left: 60px;
-    font-size: 1.3rem;
+.contact p {
+  padding-left: 60px;
+  font-size: 1.3rem;
 }
 
 /*Game-Information Page*/
-table{
-    margin-bottom: 1rem;
+table {
+  margin-bottom: 1rem;
 }
-td{
-    vertical-align: top;
+td {
+  vertical-align: top;
 }
 .calendar,
-.location{
-    width: 100%;
+.location {
+  width: 100%;
 }
 .calendar th,
-.location th{
-    font-weight: 700;
-    text-align: left;
-    font-size: 1.8rem;
+.location th {
+  font-weight: 700;
+  text-align: left;
+  font-size: 1.8rem;
 }
 .calendar td,
-.location td{
-    font-size: 1.4rem;
+.location td {
+  font-size: 1.4rem;
 }
 .calendar tbody tr:nth-child(1),
-.calendar tbody tr:nth-child(11){
-    color: #ffffff;
-    background-color: #282830;
+.calendar tbody tr:nth-child(11) {
+  color: #ffffff;
+  background-color: #282830;
 }
 .calendar tbody tr:nth-child(2),
 .calendar tbody tr:nth-child(3),
@@ -211,151 +275,151 @@ td{
 .calendar tbody tr:nth-child(12),
 .calendar tbody tr:nth-child(13),
 .calendar tbody tr:nth-child(16),
-.calendar tbody tr:nth-child(17){
-    background-color: rgba(52, 171, 120, 0.4);
+.calendar tbody tr:nth-child(17) {
+  background-color: rgba(52, 171, 120, 0.4);
 }
 /**iframes google maps**/
-.location-map div:first-child{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.location-map div:first-child {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .location-map {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
-iframe{
-    width: 450px;
-    height: 300px;
+iframe {
+  width: 450px;
+  height: 300px;
 }
-.info p{
-    padding-bottom: 5px;
-    padding-top: 5px;
-
+.info p {
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 /*RULES AND POLICIES*/
-ul{
-    list-style: square;
+ul {
+  list-style: square;
 }
-.circle-style{
-    list-style: circle;
+.circle-style {
+  list-style: circle;
 }
-.alpha-list{
-    list-style: lower-alpha;
+.alpha-list {
+  list-style: lower-alpha;
 }
-.bold{
-    font-weight: 700;
+.bold {
+  font-weight: 700;
 }
-li{
-    line-height: 1.6rem;
-    font-size: 1.3rem;
-    padding-bottom: 0.9rem;
+li {
+  line-height: 1.6rem;
+  font-size: 1.3rem;
+  padding-bottom: 0.9rem;
 }
-.rules h3{
-    padding:0;
+.rules h3 {
+  padding: 0;
 }
 
 .about p,
 .rules p,
-.info p{
-    font-size: 1.3rem;
+.info p {
+  font-size: 1.3rem;
 }
 
 .collapse {
-    width: 100%;
-    display: block;
-  } 
-  
-h3.title {
-    display: block;
-    width: 100%;
-    background-color: #6a7274;
-    color: #ffffff;
-    padding: 16px;
-    font-size: 1.3rem;
-    text-align: center;
-  }
+  width: 100%;
+  display: block;
+}
 
-.collapse:nth-child(even) h3.title{
-    border-top: 1px solid #282830;
-    border-bottom: 1px solid #282830;
-  }
+h3.title {
+  display: block;
+  width: 100%;
+  background-color: #6a7274;
+  color: #ffffff;
+  padding: 16px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.collapse:nth-child(even) h3.title {
+  border-top: 1px solid #282830;
+  border-bottom: 1px solid #282830;
+}
 
 .collapsed-content {
-    display: none;
-    padding-right: 20px;
-    background-color:#ffffff;
-    z-index: 1;
+  display: none;
+  padding-right: 20px;
+  background-color: #ffffff;
+  z-index: 1;
 }
 .collapse:hover .collapsed-content {
-      display: inline-block;
-      width: 100%;
-      text-align: justify;
-      margin: 0 auto;
+  display: inline-block;
+  width: 100%;
+  text-align: justify;
+  margin: 0 auto;
 }
 
-.collapse:hover h3.title {background-color: #35ad79;}
+.collapse:hover h3.title {
+  background-color: #35ad79;
+}
 
 /*FOOTER*/
-footer{
-    background-image: url(/images/background-1174640_1920.png);
-    background-size: cover;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
+footer {
+  background-image: url(/images/background-1174640_1920.png);
+  background-size: cover;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
 }
 
 /*inside the footer goes the subscription form and the social media icons*/
 
-footer{
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
 }
-footer div{
-    width:50%;
+footer div {
+  width: 50%;
 }
-footer form{
-    display: flex;
+footer form {
+  display: flex;
 }
 footer form input,
-footer form h2{
-    margin: 30px 0 20px 0;
+footer form h2 {
+  margin: 30px 0 20px 0;
 }
-footer form h2{
-    font-size: 1.7rem;
-    margin-right: 10px;
-    margin-left: 13px;
+footer form h2 {
+  font-size: 1.7rem;
+  margin-right: 10px;
+  margin-left: 13px;
 }
-.icons{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 60px;
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 60px;
 }
-.icons img{
-    width: 52px;
-    height: 52px;
-    margin: 8px;
+.icons img {
+  width: 52px;
+  height: 52px;
+  margin: 8px;
 }
-.icons a{
-    align-self: center;
+.icons a {
+  align-self: center;
 }
 /* .icons a:hover{
     QUITAR EL HOVER DE ESTOS LINKS!!
 } */
-footer input[type="email"]{
-    width: 290px;
-    font-family: 'Barlow Semi Condensed',sans-serif;
+footer input[type="email"] {
+  width: 290px;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 footer input[type="email"]:focus,
-footer input[type="email"]:hover
-{
-    border: 4px solid #4B493B;
+footer input[type="email"]:hover {
+  border: 4px solid #4b493b;
 }
-footer input[type="submit"]:hover{
-    box-shadow: 0 0 5px #000;
+footer input[type="submit"]:hover {
+  box-shadow: 0 0 5px #000;
 }
 
 /*REGISTRATION FORM*/
@@ -364,197 +428,265 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
 
-.registration h1{
-    font-family:'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-    margin-top:20px;
-    margin-bottom: 20px;
+.registration h1 {
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.registration{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    font-family:'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.2rem;
+.registration {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
 }
-option{
-    font-size: 1.2rem;
+option {
+  font-size: 1.2rem;
 }
-.permission p{
-    font-family: 'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1rem;
-    text-align: justify;
-} 
-.permission p:last-child{
-    margin-top:10px;
+.permission p {
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  text-align: justify;
 }
-.personal-info, 
+.permission p:last-child {
+  margin-top: 10px;
+}
+.personal-info,
 .city-postcode,
 .bday-gender,
 .contacto,
 .closest-school,
 .grade,
-.size{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-bottom: 30px;
+#size {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 30px;
 }
 .personal-info div,
 .city-postcode div,
-.contacto>div,
-.size div,
-.signature-date div{
-    display: flex;
-    margin-right: 20px;
-    width: 50%;
+.contacto > div,
+#size div,
+.signature-date div {
+  display: flex;
+  margin-right: 20px;
+  width: 50%;
 }
 .personal-info div input,
 .city-postcode div input,
 .contacto div input,
 .address input,
 .parent input,
-.signature-date div input{
-    margin-left: 10px;
-    flex-grow: 1;
-    border: none;;
+.signature-date div input {
+  margin-left: 10px;
+  flex-grow: 1;
+  border: none;
 }
 input[type="text"],
 .contacto input[type="email"],
-input[type="tel"]{
-    background-color: rgba(53, 173, 121,0.2);
+input[type="tel"] {
+  background-color: rgba(53, 173, 121, 0.2);
 }
 .address,
-.parent{
-    display: flex;
-    margin-bottom: 30px;
-    margin-right: 20px;
+.parent {
+  display: flex;
+  margin-bottom: 30px;
+  margin-right: 20px;
 }
-.bday-gender>div{
-    width: 50%;
-    justify-content: flex-start;
+.bday-gender > div {
+  width: 50%;
+  justify-content: flex-start;
 }
-.bday-gender>div:last-child{
-    display: flex;
+.bday-gender > div:last-child {
+  display: flex;
 }
-.grade{
-    display: flex;
-    width: 70%;
+.grade {
+  display: flex;
+  width: 70%;
 }
-.grade p{
-    margin-right: 20px;
+.grade p {
+  margin-right: 20px;
 }
-.closest-school{
-    display: flex;
-    flex-direction: column;
+.closest-school {
+  display: flex;
+  flex-direction: column;
 }
-.closest-school div{
-    display: flex;
-    flex-direction: row;
+.closest-school div {
+  display: flex;
+  flex-direction: row;
 }
-.closest-school>div:first-child{
-    margin-bottom: 10px;
+.closest-school > div:first-child {
+  margin-bottom: 10px;
 }
-.closest-school div:last-child>div{
-    width: 50%;
+.closest-school div:last-child > div {
+  width: 50%;
 }
-.positions{
-    display: flex;
-    flex-direction: column;
+.positions {
+  display: flex;
+  flex-direction: column;
 }
-.positions div{
-    display: flex;
+.positions div {
+  display: flex;
 }
-.positions>div>div{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-} 
-.positions div:first-child{
-    margin-bottom: 10px;
+.positions > div > div {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
 }
-.positions p{
-    margin-top: 10px;
-    margin-bottom: 15px;
+.positions div:first-child {
+  margin-bottom: 10px;
 }
-.size div,
-.signature-date div{
-    width: 50%;
+.positions p {
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
-.uniform{
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+#size div,
+.signature-date div {
+  width: 50%;
 }
-.permission p{
-    margin-right: 20px;
+/* #uniforms {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+} */
+/*have to be display none when the previous checkbox is checked!! */
+.row {
+  display: flex;
+  margin-top: 20px;
 }
-.signature-date{
-    display: flex;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 30px;
+.row .size {
+  justify-content: space-evenly;
 }
-.signature-date input{
-    margin-left: 10px;
+#uniform:checked ~ #size {
+  display: none;
+}
+
+.permission p {
+  margin-right: 20px;
+}
+.signature-date {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.signature-date input {
+  margin-left: 10px;
 }
 .signature-date div:first-child input,
-.grade div{
-    flex-grow: 1;
+.grade div {
+  flex-grow: 1;
 }
-input[name="submit"]{
-    display: flex;
-    font-family:'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 0 auto;
-    background-color: #35ad79;
-    border: 0 none;
-    border-radius: 20px;
+input[name="submit"] {
+  display: flex;
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 auto;
+  background-color: #35ad79;
+  border: 0 none;
+  border-radius: 20px;
 }
-select{
-    margin-left: 10px;
-    width: 198px;
+select {
+  margin-left: 10px;
+  width: 198px;
 }
 .bday-gender div:first-child,
-.bday-gender div:last-child p{
-    align-self: center;
+.bday-gender div:last-child p {
+  align-self: center;
 }
-.bday-gender div:last-child div:first-child{
-    margin-right: 30px;
+.bday-gender div:last-child div:first-child {
+  margin-right: 30px;
 }
+
+/*IS NOT WORKING
+
+*/
 /*to make the gender input 'invisible'*/
-[name=gender]{ 
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
+[name="gender"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 /*to see when the input is checked, selects the label(image in that case) that has the input checked*/
-[name=gender]:checked + label {
-    outline: 2px solid #35ad79;
-  }
+[name="gender"]:checked + label {
+  outline: 2px solid #35ad79;
+}
 
 /*FEEDBACK SENT PAGE*/
-.feedback .content h1{
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+.feedback .content h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-.feedback table{
-    width: 800px;
-
+.feedback table {
+  width: 800px;
 }
-.feedback table tr{
-    font-size: 1.3rem;
-    height: 1.5rem;
+.feedback table tr {
+  font-size: 1.3rem;
+  height: 1.5rem;
 }
-.feedback table tr th{
-    background-color: #35ad79;
-    height: 1.8rem;
+.feedback table tr th {
+  background-color: #35ad79;
+  height: 1.8rem;
+}
+/* 
+main{
+    background: linear-gradient(rgba(105, 119, 116, 0.2),rgba(132, 168, 160, 0.4)), url(/images/nysl_logo.png) no-repeat;
+} */
+/*ANIMATION*/
+.tracking-in-expand-fwd-top {
+  -webkit-animation: tracking-in-expand-fwd-top 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+}
+/* ----------------------------------------------
+ * Generated by Animista http://animista.net
+ * ----------------------------------------
+ * animation tracking-in-expand-fwd-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+    transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+    transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
 }
